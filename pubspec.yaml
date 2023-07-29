@@ -1,7 +1,7 @@
 name: swipe_to_complete
 description: A flutter package that helps you easily implement a swipe to confirm action in your app. It has two variations - horizontal and vertical. This determines which direction the user has to drag the action button to trigger the callback.
 version: 0.0.1
-homepage:
+repository: https://github.com/srujanmhase/swipe_to_complete
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc:
+  flutter_bloc: ^8.1.3
 
 dev_dependencies:
   flutter_test:
