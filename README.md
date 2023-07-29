@@ -1,39 +1,27 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## Swipe to complete
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A flutter package that helps you easily implement a swipe to confirm action in your app. It has two variations: horizontal and vertical. This determines which direction the user has to drag the action button to trigger the callback.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Demo
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+[![Video](https://img.youtube.com/vi/x3aRAE2X2mc/maxresdefault.jpg)](https://www.youtube.com/watch?v=x3aRAE2X2mc)
 
-## Features
+## Getting Started
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Determine which type you want to use:
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
 ```
+enum SwiperType {
+  horizontal,
+  vertical;
+}
+```
+Simply use the widget:
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```
+NewSwiper({
+  Key? key,
+  SwiperType type = SwiperType.horizontal,
+  required FutureOr<void> Function() callback,
+})
+```
